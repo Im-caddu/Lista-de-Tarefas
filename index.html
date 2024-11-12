@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST IFPR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com logo e título -->
+    <header>
+        <div class="header-content">
+            <a href="https://www.ifpr.edu.br" target="_blank">
+                <img src="ifpr_logo_horizontal.png" alt="Logo IFPR" class="logo">
+            </a>
+            <h1 class="header-title">TO DO LIST IFPR</h1>
+        </div>
+                
+    </header>
+
+    <!-- Seção para adicionar nova tarefa -->
+    <section class="add-task">
+        <input type="text" id="taskName" placeholder="Nome da Tarefa">
+        <select id="priority">
+            <option value="alta">Alta</option>
+            <option value="media">Média</option>
+            <option value="baixa">Baixa</option>
+        </select>
+        <button onclick="addTask()">Adicionar Tarefa</button>
+    </section>
+
+    <!-- Campo de pesquisa -->
+    <section class="search-task">
+        <input type="text" id="search" placeholder="Pesquisar tarefa" oninput="filterTasks()">
+    </section>
+
+    <!-- Lista de Tarefas -->
+    <section class="task-list" id="taskList">
+        <!-- Tarefas serão inseridas dinamicamente aqui -->
+    </section>
+</body>
+</html>
