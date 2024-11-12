@@ -29,6 +29,7 @@ header {
     position: absolute;
     left: 20px;
     height: 60px; /* Ajuste o tamanho conforme necessário */
+    top: 10px;
 }
 
 .header-title {
